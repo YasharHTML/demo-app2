@@ -4,10 +4,6 @@ import Link from "next/link";
 
 import { api } from "~/utils/api";
 
-export async function getServerSideProps() {
-  
-}
-
 export default function Home() {
   const hello = api.post.hello.useQuery({ text: "from tRPC" });
 
